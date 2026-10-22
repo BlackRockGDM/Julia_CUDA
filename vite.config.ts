@@ -5,6 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    // Προσθήκη του base path για να φορτώνουν σωστά τα assets στο GitHub Pages
+    base: '/Julia_CUDA/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
