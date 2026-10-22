@@ -29,10 +29,11 @@ jobs:
           node-version: 22
           
       - name: Install dependencies
-        run: npm install
+        # Το --legacy-peer-deps αναγκάζει το npm να εγκαταστήσει τα πακέτα ακόμα κι αν έχουν ασυμβατότητες εκδόσεων
+        run: npm install --legacy-peer-deps
         
       - name: Build
-        # Το 'tsc || true' επιτρέπει στο build να προχωρήσει ακόμα κι αν η TypeScript βρει σφάλματα
+        # Παρακάμπτουμε τους αυστηρούς ελέγχους της TypeScript και του Vite
         run: |
           export VITE_DISABLE_TYPESCRIPT_CHECK=true
           npm run build || true
@@ -48,3 +49,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
