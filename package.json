@@ -2,7 +2,6 @@
   "name": "react-example",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://blackrockgdm.github.io/Julia_CUDA/",
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
