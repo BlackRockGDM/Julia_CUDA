@@ -1,0 +1,6 @@
+{
+  "name": "Julia & CUDA.jl GPU Acceleration Studio",
+  "description": "Interactive developer studio, kernel execution simulator, occupancy calculator, and AI assistant for high-performance Julia GPU computing with CUDA.jl.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
